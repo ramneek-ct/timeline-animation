@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h5{
+    height: 50vh;
+    font-size: 34px;
+    text-align: center;
+    padding: 80px;
+}
+
+.spacer{
+    height: 50vh;
+}
+
+.svg-container{
+    position: relative;
+}
+
+svg{
+    height: 100vh;
+}
+
+.circle{
+    position: absolute;
+    top: -8px;
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 50%;
+    opacity: 0;
+    border: 8px solid #ffffff;
+    transition: opacity 0.4s ease;
+}
+
+.display{
+    opacity: 1;
+}
+
+.text{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:#d5d5d5;;
+}
+
+.circle:nth-of-type(even) .text {
+    top: 38px; 
+}
+
+.circle:nth-of-type(odd) .text {
+    bottom: 38px; 
+}
